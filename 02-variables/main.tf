@@ -15,6 +15,16 @@ output "x" {
         value= "Value of a = ${var.a}"
 }
 
-
 // If you access variables with any combination strings then ${} is preffered
 
+
+variable "b" {}
+// this variable b is declared in tfvars file
+
+
+variable "c" {}
+// this variable from cli of terraform, terraform apply -auto-approve -var c=400
+
+
+variable "d" {}
+// this variable from shell-scripting, export TF_VAR_d=500
