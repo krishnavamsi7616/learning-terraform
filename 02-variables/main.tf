@@ -4,7 +4,7 @@ variable "a" {
 
 // variable block is having one reference, here a is refernce
 
-output = "a" {
+output "a" {
         value = var.a
 }
 
