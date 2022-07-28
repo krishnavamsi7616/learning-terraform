@@ -14,7 +14,10 @@ resource "aws_instance" "web" {
       password = "DevOps321"
       host = self.public_ip
     }
-    inline = ["uname"]
+    inline = [
+      "uname -a"
+
+    ]
 
 
   }
