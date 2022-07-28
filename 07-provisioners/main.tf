@@ -33,9 +33,9 @@ resource "null_resource" "null" {
           host = aws_instance.web.public_ip
         }
 
-    
+
         inline = [
-          "uname -a"
+          "uname"
 
         ]
 
