@@ -25,6 +25,11 @@ resource "aws_instance" "web" {
 }
 
 resource "null_resource" "null" {
+
+  triggers = {
+    a = timestamp()
+  }
+
   provisioner "remote-exec" {
         connection {
           type = "ssh"
@@ -32,7 +37,6 @@ resource "null_resource" "null" {
           password = "DevOps321"
           host = aws_instance.web.public_ip
         }
-
 
         inline = [
           "uname"
