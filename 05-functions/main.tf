@@ -4,10 +4,13 @@ variable "alist" {
 
 variable "amap" {
 
+
   default = {
+  set1 {
     a = 1
     b = 2
   }
+}
 }
 
 output "alist_length" {
