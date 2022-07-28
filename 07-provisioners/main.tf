@@ -15,7 +15,7 @@ resource "aws_instance" "web" {
       host = self.public_ip
     }
     inline = [
-      "uname -a"
+      "uname"
 
     ]
 
