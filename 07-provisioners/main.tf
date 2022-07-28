@@ -12,7 +12,7 @@ resource "aws_instance" "web" {
       type = "ssh"
       user = "root"
       password = "DevOps321"
-      host = "self.public_ip"
+      host = self.public_ip
     }
     inline = ["uname"]
 
