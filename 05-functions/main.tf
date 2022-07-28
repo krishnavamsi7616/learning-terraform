@@ -6,7 +6,7 @@ variable "amap" {
 
 
   default = {
-  set1 {
+  set1 = {
     a = 1
     b = 2
   }
